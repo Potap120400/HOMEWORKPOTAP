@@ -1,27 +1,27 @@
-
 let N;
-do {
-    N = prompt('Введіть значення N:','').trim();
-} while (N === '' || isNaN (N) || N === null);
-const parsedN = parseInt(N);
-console.log (parsedN);
+do{
+    N = +prompt("Введіть значення N", );
+}while(!Number.isInteger(N));
+console.log(N);
 
-let M ;
-do {
-    M = prompt('Введіть значення M:','').trim();
-} while (M === '' || isNaN (M) || M === null);
-const parsedM = parseInt(M);
-console.log (parsedM);
+let M;
+do{
+    M = +prompt("Віедіть значення M", );
+}while(!Number.isInteger(M));
+console.log(M);
 
-const skipEven = confirm('Пропустити парні числа?');
-console.log(skipEven);
-let sum = 0;
-        for (i = parsedN; i <= parsedM; i ++) {
-            if (skipEven && i % 2 === 0) {
-                continue;
-            }else {
-                sum += i;    
+const skip = confirm('Пропустити парні?');
+console.log(skip);
+
+let sumNumber = 0;
+for (let i = N; i <= M; i++) {
+    if (skip && i % 2 !== 0) {
+        sumNumber += i;
+    } else {
+        sumNumber += i;
     }
-}
-console.log(sum);
-alert (`Сума показників: ${sum}`);
+
+} console.log(sumNumber);
+ alert (`Сума показників: ${sumNumber}`);
+
+
