@@ -1,12 +1,12 @@
 
-let N = '';
+let N;
 do {
     N = prompt('Введіть значення N:','').trim();
 } while (N === '' || isNaN (N) || N === null);
 const parsedN = parseInt(N);
 console.log (parsedN);
 
-let M = '';
+let M ;
 do {
     M = prompt('Введіть значення M:','').trim();
 } while (M === '' || isNaN (M) || M === null);
