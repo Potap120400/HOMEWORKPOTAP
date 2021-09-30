@@ -7,7 +7,7 @@ console.log(N);
 let M;
 do{
     M = +prompt("Віедіть значення M", );
-}while(!Number.isInteger(M));
+}while(!Number.isInteger(M) || M < N);
 console.log(M);
 
 const skip = confirm('Пропустити парні?');
@@ -23,5 +23,3 @@ for (let i = N; i <= M; i++) {
 
 } console.log(sumNumber);
  alert (`Сума показників: ${sumNumber}`);
-
-
