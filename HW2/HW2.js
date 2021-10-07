@@ -15,7 +15,7 @@ console.log(skip);
 
 let sumNumber = 0;
 for (let i = N; i <= M; i++) {
-    if (skip && i % 2 !== 0) {
+    if (skip && i % 2 === 0) {
         sumNumber += i;
     } else {
         sumNumber += i;
