@@ -41,7 +41,7 @@ console.log(getStudentMark(students, marks));
 
 
 const getPairsAndRandom = (pairs) =>
-  pairs.map((pair, i) => [...pairs[i], Math.floor(Math.random() * 5)]);
+  pairs.map((pair, i) => [...pairs[i], Math.floor(Math.random() * 5 + 0,9)]);
 
 console.log(getPairsAndRandom(pairs));
 const pairsRandom = getPairsAndRandom(pairs);
