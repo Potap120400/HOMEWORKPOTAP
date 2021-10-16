@@ -1,25 +1,34 @@
-let N;
-do{
-    N = +prompt("Введіть значення N", );
-}while(!Number.isInteger(N));
-console.log(N);
+let variableN;
 
-let M;
-do{
-    M = +prompt("Віедіть значення M", );
-}while(!Number.isInteger(M) || M < N);
-console.log(M);
+  do {
+      variableN = +prompt("Введіть перше число", '');
+   }
+  while(!Number.isInteger(variableN)
+   );
 
-const skip = confirm('Пропустити парні?');
-console.log(skip);
+let variableM;
 
-let sumNumber = 0;
-for (let i = N; i <= M; i++) {
-    if (skip && i % 2 === 0) {
-        sumNumber += i;
-    } else {
-        sumNumber += i;
-    }
+  do {
+      variableM = +prompt("Введіть друге число", '');
+   } 
+  while (!Number.isInteger(variableM)
+   );
 
-} console.log(sumNumber);
- alert (`Сума показників: ${sumNumber}`);
+const minVariable = Math.min(variableN, variableM);
+const maxVariable = Math.max(variableN, variableM);
+
+const skipEvenNumbers = confirm("Пропускати парні?");
+
+let sum = 0;
+ for ( 
+    let i = minVariable; i <= maxVariable; i++) {
+    if (
+        skipEvenNumbers && i % 2 == 0) continue;
+    sum += i;
+ }
+
+
+document.writeln(`Перше число: ${variableN}; <br> 
+ Друге число: ${variableM}; <br> 
+ 
+ Результат підрахунку: ${sum}; <br>`)
