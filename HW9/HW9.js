@@ -1,6 +1,6 @@
 class Student {
     marksStudent = [5, 3, 5, 4];
-    marksNew = [];
+    marksSudentNew = [];
     constructor(university, course, fullName) {
         this.university = university;
         this.course = course;
@@ -26,11 +26,11 @@ class Student {
         }
     }
     dismiss() {
-        this.marksNew = this.marksStudent;
+        this.marksSudentNew = this.marksStudent;
         this.marksStudent = null;
     }
     recover() {
-        this.marksStudent = this.marksNew;
+        this.marksStudent = this.marksSudentNew;
     }
 }
 
