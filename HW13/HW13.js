@@ -10,7 +10,7 @@ async function getRandomChinese(length){
             }, 50 * length);
         })
     }
-    console.log(result);
+    console.log(str);
 }
 
 getRandomChinese(4);
