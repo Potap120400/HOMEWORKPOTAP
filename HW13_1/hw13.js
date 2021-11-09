@@ -13,4 +13,4 @@ async function getRandomChinese(length){
     console.log(str);
 }
 
-getRandomChinese(4);
+getRandomChinese(4).then((word) => { console.log(word )});
