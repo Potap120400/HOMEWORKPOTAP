@@ -15,4 +15,4 @@ function generateBlocks(){
 setInterval(() => {
     newElem.innerHTML = '';
     generateBlocks()
-}, 800)
+}, 1000)
