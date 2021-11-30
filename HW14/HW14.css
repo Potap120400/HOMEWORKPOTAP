@@ -1,0 +1,31 @@
+.character{
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #eee;
+    display: inline-block;
+    color: white;
+}
+body{
+    background:url(https://cdn.shazoo.ru/398796_oiKLYz5ZFk_d8b3639321fe15fcc821fe3438661329.jpg) ;
+    background-size: 100%;
+}
+.planets{
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #eee;
+    display: inline-block;
+    color: white;
+    margin-top: 100px;
+}
+button {
+    background-color: #4CAF50; 
+    border-radius: 50%;
+    color: white;
+    padding: 30px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
